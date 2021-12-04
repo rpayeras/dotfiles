@@ -1,0 +1,7 @@
+[user]
+	name = Roberto Payeras
+	email = payerasam@gmail.com
+[core]
+	editor = vscode
+	excludesfile = /home/rpayeras/.gitignore
+	autocrlf = input
