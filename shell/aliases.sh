@@ -30,5 +30,5 @@ alias c.='(code $PWD &>/dev/null &)'
 alias o.='open .'
 alias up='dot package update_all'
 
-#rofi
-alias opv=ls ~/Projects | rofi -show -dmenu -font "Monospace 30" -i | xargs -I_ code ~/Projects/_
+#Rofi
+alias opv='ls ~/Projects | rofi -show -dmenu -font "Monospace 30" -i | xargs -I_ code ~/Projects/_'
