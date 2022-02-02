@@ -1,0 +1,77 @@
+{
+	"name": "px-comment",
+	"displayName": "rem-to-px-comment",
+	"description": "",
+	"version": "0.0.7",
+	"publisher": "abhishekmg",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/abhishekmg/vscode-css-comment"
+	},
+	"engines": {
+		"vscode": "^1.60.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"css",
+		"styling",
+		"px",
+		"rem"
+	],
+	"icon": "images/rem-to-px-comment-logo.png",
+	"galleryBanner": {
+		"color": "#000000",
+		"theme": "dark"
+	},
+	"activationEvents": [
+		"onLanguage:javascript",
+		"onLanguage:typescript"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Rem to Px comment configuration",
+			"properties": {
+				"remToPxComment.commentColor": {
+					"type": "string",
+					"default": "#36C210",
+					"description": "Decoration color for the comment value"
+				},
+				"remToPxComment.remConversionValue": {
+					"type": "number",
+					"default": "16",
+					"description": "value to convert px to rem, default is 16px"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js",
+		"release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major",
+		"release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor",
+		"release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.60.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.2.2",
+		"@types/node": "14.x",
+		"eslint": "^7.27.0",
+		"glob": "^7.1.7",
+		"mocha": "^8.4.0",
+		"typescript": "^4.3.2",
+		"vscode-test": "^1.5.2"
+	},
+	"__metadata": {
+		"id": "b01ddec4-d488-46b1-a783-6a4f3ba0cded",
+		"publisherId": "7ba7e13c-0079-44c3-a3b5-a662dfc3c2c4",
+		"publisherDisplayName": "abhishekmg",
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1642922690077
+	}
+}
