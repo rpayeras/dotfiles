@@ -8,7 +8,7 @@ alias la="exa -la"
 alias tt="exa --tree --level=2 --long"
 alias ~="cd ~"
 alias dotfiles='cd $DOTFILES_PATH'
-alias code='/snap/bin/code'
+alias code='/snap/bin/code | /mnt/c/Program\ Files/Microsoft\ VS\ Code/Code.exe'
 
 alias tmp="cd ~/Downloads/tmp"
 alias cdc='cd ~/Code'
